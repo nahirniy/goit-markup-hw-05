@@ -42,6 +42,11 @@ ol {
 img {
     display: block;
 }
+input,
+button {
+    color: inherit;
+    font-family: inherit;
+}
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -535,7 +540,12 @@ img {
 .p-footer {
     font-weight: 500;
     color: var(--white);
-    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.social-links-box {
+    margin-right: 80px;
 }
 .social-links-list {
     display: flex;
@@ -551,6 +561,7 @@ img {
     justify-content: center;
     display: flex;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 16px;
 }
 .icon-social-link {
     width: 24px;
@@ -561,6 +572,21 @@ img {
 .social-link:hover,
 .social-link:focus {
     background-color: var(--green);
+}
+.input-subscribe {
+    background-color: var(--navyblue);
+    border-radius: 4px;
+    border: 1px solid var(--white, #fff);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 8px 16px;
+    width: 264px;
+    height: 40px;
+    flex-shrink: 0;
+}
+.input-subscribe::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.48px;
 }
 
 /** ---------------------------------------- */

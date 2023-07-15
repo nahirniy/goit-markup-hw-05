@@ -15,6 +15,7 @@
     --dairy: #fcfcfc;
     --lightslate: #8e8f99;
     --green: #31d0aa;
+    --navyblue-modal: rgba(46, 47, 66, 0.4);
 }
 body {
     font-family: Roboto, sans-serif;
@@ -82,6 +83,29 @@ button {
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
+}
+.button-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.64px;
+    color: var(--white);
+}
+.button {
+    background-color: var(--iris);
+    cursor: pointer;
+    display: block;
+    padding: 16px 32px;
+    border-radius: 4px;
+    border: 0px;
+    min-width: 169px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
+}
+.button:hover,
+.button:focus {
+    background-color: var(--ocean);
 }
 
 /** ---------------------------------------- */
@@ -216,28 +240,6 @@ button {
     flex-shrink: 0;
     margin: 0 auto;
     margin-bottom: 48px;
-}
-.order-service-button {
-    background-color: var(--iris);
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    line-height: 1.5;
-    letter-spacing: 0.64px;
-    color: var(--white);
-    cursor: pointer;
-    display: block;
-    padding: 16px 32px;
-    border-radius: 4px;
-    border: 0px;
-    min-width: 169px;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin: 0 auto;
-}
-.order-service-button:hover,
-.order-service-button:focus {
-    background-color: var(--ocean);
 }
 
 /** ---------------------------------------- */
@@ -573,6 +575,10 @@ button {
 .social-link:focus {
     background-color: var(--green);
 }
+.box-form {
+    display: flex;
+    gap: 24px;
+}
 .input-subscribe {
     background-color: var(--navyblue);
     border-radius: 4px;
@@ -587,6 +593,18 @@ button {
     font-size: 12px;
     line-height: 2;
     letter-spacing: 0.48px;
+}
+.button-subscribe {
+    border-radius: 4px;
+    background: var(--iris, #4d5ae5);
+    border: none;
+    display: inline-flex;
+    padding: 8px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 40px;
+    cursor: pointer;
 }
 
 /** ---------------------------------------- */
@@ -625,8 +643,6 @@ button {
     position: absolute;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 13px;
-    margin-top: 80px;
 }
 .close-modal {
     background-color: var(--cornflower);
@@ -658,4 +674,79 @@ button {
 .close-modal:hover .icon-close-modal,
 .close-modal:focus .icon-close-modal {
     fill: var(--white);
+}
+.modal-form-box {
+    margin: 72px 24px 24px;
+}
+.header-modal {
+    color: var(--navyblue);
+    text-align: center;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+}
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 16px 0;
+}
+.modal-label {
+    color: var(--lightslate);
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.48px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.modal-input {
+    height: 40px;
+    width: 360px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal);
+}
+.modal-textarea {
+    height: 120px;
+    width: 360px;
+    border-radius: 4px;
+    border: 1px solid var(--navyblue-modal);
+    padding: 8px 287px 98px 16px;
+    resize: none;
+    overflow: hidden;
+}
+.modal-input:hover,
+.modal-input:focus,
+.modal-textarea:hover,
+.modal-textarea:focus {
+    border-radius: 4px;
+    border: 1px solid var(--iris, #4d5ae5);
+    outline: none;
+}
+textarea::placeholder {
+    color: var(--navyblue-modal);
+}
+.box-privacy-policy {
+    display: flex;
+    gap: 8px;
+    align-items: baseline;
+}
+
+.checkbox {
+    border-radius: 2px;
+    border: 1px solid var(--navyblue-modal);
+}
+.icon-checkbox {
+    position: absolute;
+    opacity: 0;
+}
+
+.text-modal {
+    color: var(--lightslate);
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.48px;
+}
+.link-privacy-policy {
+    color: var(--iris);
 }

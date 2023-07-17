@@ -702,7 +702,6 @@ button {
 .modal-form {
     display: flex;
     flex-direction: column;
-    margin: 16px 0;
 }
 .modal-form-box {
     margin-bottom: 8px;

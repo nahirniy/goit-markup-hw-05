@@ -756,6 +756,9 @@ button {
     resize: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.modal-textarea::placeholder {
+    color: var(--navyblue-modal);
+}
 
 .modal-input:focus-within,
 .modal-textarea:focus-within {

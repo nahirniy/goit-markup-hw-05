@@ -48,6 +48,13 @@ button {
     color: inherit;
     font-family: inherit;
 }
+
+/** ---------------------------------------- */
+
+/** ------------COMPONENTS STYLE------------ */
+
+/** ---------------------------------------- */
+
 .container {
     width: 1158px;
     margin: 0 auto;
@@ -60,11 +67,11 @@ button {
     list-style-type: none;
 }
 .paragraph {
-    color: var(--slate);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: left;
+    color: var(--slate);
 }
 .header-three {
     color: var(--navyblue);
@@ -84,14 +91,14 @@ button {
     text-transform: capitalize;
     text-align: center;
 }
-.button-text {
+.btn-text {
     font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.64px;
     color: var(--white);
 }
-.button {
+.btn-text {
     background-color: var(--iris);
     cursor: pointer;
     display: block;
@@ -103,9 +110,27 @@ button {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin: 0 auto;
 }
-.button:hover,
-.button:focus {
+.btn:hover,
+.btn:focus {
     background-color: var(--ocean);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.text-modal {
+    color: var(--lightslate);
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.48px;
 }
 
 /** ---------------------------------------- */
@@ -126,6 +151,10 @@ button {
     display: flex;
     gap: 332px;
 }
+.page-nav {
+    display: flex;
+    align-items: center;
+}
 .logo {
     color: var(--iris);
     font-size: 18px;
@@ -143,13 +172,13 @@ button {
 .studio-header {
     color: var(--navyblue);
 }
-.page-nav-list,
-.address-nav-list {
+.nav-list,
+.address-list {
     display: flex;
     gap: 40px;
     color: var(--ocean);
 }
-.menu {
+.menu-link {
     display: block;
     color: var(--navyblue);
     font-size: 16px;
@@ -159,10 +188,10 @@ button {
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu:hover {
+.menu-link:hover {
     color: var(--ocean);
 }
-.menu:focus {
+.menu-link:focus {
     color: var(--ocean);
 }
 .current,
@@ -175,18 +204,17 @@ button {
     font-style: normal;
     line-height: 24px;
     letter-spacing: 0.32px;
-    color: var(--slate);
 }
-.contacts {
+.contact-link {
     color: var(--slate);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 24px 0;
     display: block;
 }
-.contacts:focus {
+.contact-link:focus {
     color: var(--ocean);
 }
-.contacts:hover {
+.contact-link:hover {
     color: var(--ocean);
 }
 .current::after {
@@ -208,10 +236,6 @@ button {
     position: absolute;
     bottom: -1px;
     left: 0;
-}
-.page-nav {
-    display: flex;
-    align-items: center;
 }
 
 /** ---------------------------------------- */
@@ -248,18 +272,6 @@ button {
 
 /** ---------------------------------------- */
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-}
 .feature-list {
     display: flex;
     gap: 24px;
@@ -424,7 +436,7 @@ button {
     gap: 24px;
     margin-bottom: 72px;
 }
-.button-category {
+.btn-category {
     background-color: var(--cloud);
     color: var(--iris);
     font-size: 16px;
@@ -442,8 +454,8 @@ button {
         border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.button-category:hover,
-.button-category:focus {
+.btn-category:hover,
+.btn-category:focus {
     background-color: var(--ocean);
     color: var(--white);
     padding: 12px 24px;
@@ -599,7 +611,7 @@ button {
 .input-subscribe::placeholder {
     color: var(--white);
 }
-.button-subscribe {
+.btn-subscribe {
     border-radius: 4px;
     background: var(--iris, #4d5ae5);
     border: none;
@@ -622,16 +634,9 @@ button {
 /** ---------------------------------------- */
 
 .is-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
 }
 .modal {
     position: fixed;
@@ -699,6 +704,13 @@ button {
     letter-spacing: 0.32px;
     margin-bottom: 16px;
 }
+
+/** ---------------------------------------- */
+
+/** ----------MODAL FORM---------- */
+
+/** ---------------------------------------- */
+
 .modal-form {
     display: flex;
     flex-direction: column;
@@ -707,10 +719,6 @@ button {
     margin-bottom: 8px;
 }
 .modal-label {
-    color: var(--lightslate);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.48px;
     display: block;
     margin-bottom: 4px;
 }
@@ -743,9 +751,6 @@ button {
 .modal-textarea {
     height: 120px;
     width: 100%;
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.48px;
     color: var(--navyblue-modal);
     border-radius: 4px;
     border: 1px solid var(--navyblue-modal);
@@ -768,14 +773,6 @@ button {
     display: flex;
     align-items: baseline;
     margin-bottom: 24px;
-}
-
-.text-modal {
-    color: var(--lightslate);
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.48px;
-    font-style: normal;
 }
 .link-privacy-policy {
     color: var(--iris);

@@ -27,25 +27,29 @@
                     <a href="./index.html" class="logo link"
                         >Web<span class="studio-header">Studio</span></a
                     >
-                    <ul class="list page-nav-list">
+                    <ul class="list nav-list">
                         <li>
-                            <a href="./index.html" class="menu link current">Studio</a>
+                            <a href="./index.html" class="menu-link link current"
+                                >Studio</a
+                            >
                         </li>
                         <li>
-                            <a href="./portfolio.html" class="menu link">Portfolio</a>
+                            <a href="./portfolio.html" class="menu-link link"
+                                >Portfolio</a
+                            >
                         </li>
-                        <li><a href="" class="menu link">Contacts</a></li>
+                        <li><a href="" class="menu-link link">Contacts</a></li>
                     </ul>
                 </nav>
                 <address class="address">
-                    <ul class="list address-nav-list">
+                    <ul class="list address-list">
                         <li>
-                            <a href="mailto:info@devstudio.com" class="contacts link"
+                            <a href="mailto:info@devstudio.com" class="contact-link link"
                                 >info@devstudio.com</a
                             >
                         </li>
                         <li>
-                            <a href="tel:+110001111111" class="contacts link"
+                            <a href="tel:+110001111111" class="contact-link link"
                                 >+11 (000) 111-11-11</a
                             >
                         </li>
@@ -59,7 +63,7 @@
             <section class="service">
                 <div class="container">
                     <h1 class="header-one">Effective Solutions for Your Business</h1>
-                    <button type="button" class="button button-text" data-modal-open>
+                    <button type="button" class="btn btn-text" data-modal-open>
                         Order Service
                     </button>
                 </div>
@@ -537,7 +541,7 @@
                                 name="email"
                                 placeholder="E-mail"
                         /></label>
-                        <button class="button-subscribe button-text" type="submit">
+                        <button class="btn-subscribe btn-text" type="submit">
                             Subscribe
                             <svg class="icon-subscribe" width="24" height="24">
                                 <use href="./images/icons.svg#icon-subscribe"></use>
@@ -558,7 +562,7 @@
                 <p class="header-modal">Leave your contacts and we will call you back</p>
                 <form class="modal-form">
                     <div class="modal-form-box">
-                        <label for="user-name" class="modal-label">Name</label>
+                        <label for="user-name" class="modal-label text-modal">Name</label>
                         <div class="input-box">
                             <input
                                 id="user-name"
@@ -571,7 +575,7 @@
                         </div>
                     </div>
                     <div class="modal-form-box">
-                        <label for="user-tel" class="modal-label">Phone</label>
+                        <label for="user-tel" class="modal-label text-modal">Phone</label>
                         <div class="input-box">
                             <input
                                 id="user-tel"
@@ -584,7 +588,9 @@
                         </div>
                     </div>
                     <div class="modal-form-box">
-                        <label for="user-email" class="modal-label">Email</label>
+                        <label for="user-email" class="modal-label text-modal"
+                            >Email</label
+                        >
                         <div class="input-box">
                             <input
                                 id="user-email"
@@ -597,11 +603,12 @@
                         </div>
                     </div>
                     <div class="modal-form-textarea">
-                        <label for="user-comment" class="modal-label">Comment</label
+                        <label for="user-comment" class="modal-label text-modal"
+                            >Comment</label
                         ><textarea
                             id="user-comment"
                             rows="3"
-                            class="modal-textarea"
+                            class="modal-textarea text-modal"
                             name="user-comment"
                             placeholder="Text input"
                         ></textarea>
@@ -624,7 +631,7 @@
                             <a class="link-privacy-policy" href="">Privacy Policy</a>
                         </label>
                     </div>
-                    <button class="button button-text" type="submit">Send</button>
+                    <button class="btn btn-text" type="submit">Send</button>
                 </form>
             </div>
         </div>
